@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cli:
+   image: drupalcli:7t
+   restart: always
+   volumes:
+     - C:\webroot\docker\platforms\akinsbell\app\src:/var/www/html
+     - ./config/drush:/etc/drush
+     - c:\users\kevin\.ssh:/var/www/src/.ssh
+     - C:\webroot\docker\platforms\akinsbell\app\archive:/var/www/archive
+
+networks:
+  default:
+    external:
+      name: akinsbell_default
