@@ -4,7 +4,7 @@ services:
    image: llslim/docker-phpcli:latest
    restart: always
    volumes:
-     - C:\webroot\dev\html:/var/www/html
+     - ../html:/var/www/html
      - ./config/drush:/etc/drush
      - c:\users\kevin\.ssh:/var/www/src/.ssh
      - C:\webroot\dev\archive:/var/www/archive
@@ -12,4 +12,4 @@ services:
 networks:
   default:
     external:
-      name: loaclhost_default
+      name: lampserver_default
