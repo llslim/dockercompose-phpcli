@@ -4,9 +4,9 @@ services:
    image: llslim/docker-phpcli:latest
    restart: always
    volumes:
-     - ../html:/var/www/html
+     - ../work:/var/www/html
      - ./config/drush:/etc/drush
-     - c:\users\kevin\.ssh:/var/www/src/.ssh
+     - c:\users\kevin\.ssh:/home/dev/.ssh
      - C:\webroot\dev\archive:/var/www/archive
 
 networks:
