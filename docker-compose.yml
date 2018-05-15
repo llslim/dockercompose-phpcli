@@ -1,13 +1,18 @@
 version: '3'
 services:
   cli:
-   image: llslim/docker-phpcli:latest
+   image: llslim/docker-phpcli-drupal:latest
    restart: always
    volumes:
      - ../work:/var/www/html
      - ./config/drush:/etc/drush
-     - c:\users\kevin\.ssh:/home/dev/.ssh
-     - C:\webroot\dev\archive:/var/www/archive
+     - ssh-vol:/home/dev/.ssh
+     - ../archive/drush:/home/dev/.drush
+     - ../archive:/var/www/archive
+
+volumes:
+  ssh-vol:
+    external: true
 
 networks:
   default:
