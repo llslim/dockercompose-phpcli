@@ -7,7 +7,7 @@ services:
      - ../work:/var/www/html
      - ./config/drush:/etc/drush
      - ssh-vol:/home/dev/.ssh
-     - ../archive/drush:/home/dev/.drush
+     - ../conf/drush:/home/dev/.drush
      - ../archive:/var/www/archive
 
 volumes:
