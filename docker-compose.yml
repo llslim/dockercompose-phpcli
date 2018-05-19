@@ -1,6 +1,6 @@
 version: '3'
 services:
-  cli:
+  shell:
    image: llslim/docker-phpcli-drupal:legacy
    restart: always
    volumes:
