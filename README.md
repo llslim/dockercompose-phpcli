@@ -3,4 +3,4 @@ This Docker compose config allows me to use PHP & Drupal devtools in a BASH Shel
 to update a Drupal web application or site.
 
 # Run this command line container
-`docker-compose run --rm cli bash`
+`docker-compose run --rm shell bash`
